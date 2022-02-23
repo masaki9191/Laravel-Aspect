@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#contact a span {
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    width: 1px;
+    height: 4rem;
+    border-left: 1px solid #fff;
+    -webkit-animation: sdb 2.5s infinite;
+    animation: sdb 2.5s infinite;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+@-webkit-keyframes sdb {
+	0% {
+		-webkit-transform: rotate(0deg) translate(0, 0);
+	}
+	100% {
+		-webkit-transform: rotate(0deg) translate(0, 4rem);
+	}
+	}
+	@keyframes sdb {
+	0% {
+		transform: rotate(0deg) translate(0, 0);
+	}
+	100% {
+		transform: rotate(0deg) translate(0, 4rem);
+	}
+}
+
+#model .arrow01 {
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    width: 1px;
+    height: 6rem;
+    border-left: 1px solid #111a38;
+    -webkit-animation: sdb02 2.5s infinite;
+    animation: sdb02 2.5s infinite;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+@-webkit-keyframes sdb02 {
+	0% {
+		-webkit-transform: rotate(0deg) translate(0, 0);
+	}
+	100% {
+		-webkit-transform: rotate(0deg) translate(0, 4rem);
+	}
+	}
+	@keyframes sdb02 {
+	0% {
+		transform: rotate(0deg) translate(0, 0);
+	}
+	100% {
+		transform: rotate(0deg) translate(0, 4rem);
+	}
+}
+
+@media screen and (max-width: 767px) {
+    #contact .effect {
+        top: 0;
+        left: 0;
+        -webkit-animation: sdb03 2.5s infinite;
+        animation: sdb03 2.5s infinite;
+        opacity: 0.4;
+    }
+    @-webkit-keyframes sdb03 {
+        0% {
+            -webkit-transform: rotate(0deg) translate(0, 0);
+        }
+        100% {
+            -webkit-transform: rotate(0deg) translate(-100%, 0);
+        }
+        }
+        @keyframes sdb03 {
+        0% {
+            transform: rotate(0deg) translate(0, 0);
+        }
+        100% {
+            transform: rotate(0deg) translate(-100%, 0);
+        }
+    }
+
+}
